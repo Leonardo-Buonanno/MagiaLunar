@@ -5,16 +5,15 @@ O projeto oferece uma experiência intuitiva e acolhedora, permitindo que usuár
 
 ## ✨ Propósito
 
-Criado para facilitar o acesso a **consultas de tarot online**, o Magia Lunar Tarot foi desenvolvido com o intuito de promover autoconhecimento, espiritualidade e orientação energética. 
-A plataforma é gerenciada por **Giovanna**, taróloga com experiência e dedicação, que realiza atendimentos com carinho, ética e sensibilidade.
+Criado para facilitar o acesso a **consultas de tarot online**, o Magia Lunar Tarot foi desenvolvido com o intuito de promover autoconhecimento, espiritualidade e orientação energética. A plataforma é gerenciada por **Giovanna**, taróloga com experiência e dedicação, que realiza atendimentos com carinho, ética e sensibilidade.
 
 ## 🔮 Funcionalidades
 
-- ✅ **Catálogo interativo** com serviços e preços detalhados
-- ✅ **Seleção dinâmica de serviços** com atualização automática do link de agendamento
-- ✅ **Agendamento via WhatsApp** com mensagem personalizada
-- ✅ **Informações claras sobre a política de atendimento**
-- ✅ **Sessão "Sobre o Tarot"** explicando o trabalho da taróloga
+- ✅ **Catálogo interativo** com serviços e preços detalhados  
+- ✅ **Seleção dinâmica de serviços** com atualização automática do link de agendamento  
+- ✅ **Agendamento via WhatsApp** com mensagem personalizada  
+- ✅ **Informações claras sobre a política de atendimento**  
+- ✅ **Sessão "Sobre o Tarot"** explicando o trabalho da taróloga  
 - ✅ **Design responsivo e simples**, com HTML, CSS e JavaScript puros
 
 ## 🛠️ Tecnologias Utilizadas
@@ -27,11 +26,11 @@ A plataforma é gerenciada por **Giovanna**, taróloga com experiência e dedica
 
 ## 📄 Política de Atendimento
 
-- Consultas entregues em até 24h, por ordem de chegada
-- Proibido abordar temas como morte, saúde, justiça ou vidas passadas
-- Não há reembolso após solicitação da tiragem
-- Tiragens urgentes incluem taxa adicional
-- Atendimento apenas após envio da pergunta e método
+- Consultas entregues em até 24h, por ordem de chegada  
+- Proibido abordar temas como morte, saúde, justiça ou vidas passadas  
+- Não há reembolso após solicitação da tiragem  
+- Tiragens urgentes incluem taxa adicional  
+- Atendimento apenas após envio da pergunta e método  
 
 ## 💬 Exemplo de Serviços Oferecidos
 
@@ -49,6 +48,6 @@ Os serviços são agendados diretamente via [WhatsApp](https://wa.me/55119322779
 
 ---
 
-Feito com ✨ por **Giovanna**, com carinho, respeito e conexão espiritual.  
-Projeto desenvolvido para facilitar o acesso à orientação esotérica com ética e propósito.  
+💻 Projeto desenvolvido por **Leonardo Buonanno Del Matto** para **Giovanna**, com o objetivo de profissionalizar e facilitar o atendimento espiritual realizado por ela através do tarot.
+
 &copy; 2024 Magia Lunar Tarot – Todos os direitos reservados.
