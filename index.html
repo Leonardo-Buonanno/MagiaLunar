@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magia Lunar Tarot - Consultas e Orientações</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header>
+        <h1>Magia Lunar Tarot</h1>
+        <img src="/IMG/tarot.jpg" alt="Gigi Tarot" class="header-logo">
+        <p>Descubra seu caminho através das cartas</p>
+    </header>
+
+    <div class="container">
+        <section class="cards-section">
+            <div class="card">
+                <h2>Consultas Online</h2>
+                <p>Atendimento personalizado através de videoconferência</p>
+                <div class="select-service">
+                    <div class="selected-services">
+                        <h3>Quais opções serão agendadas:</h3>
+                        <ul id="selected-options-list"></ul>
+                    </div>
+                    <a href="#" id="whatsapp-link" class="btn" target="_blank">Agendar</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Política de Atendimento</h2>
+                <p>• Prazo de até 24 horas para entrega da tiragem, dependendo unicamente do andamento da fila.</p>
+                <p>• Não realizo tiragens sobre morte, falecidos, gravidez/paternidade, saúde, casos judiciais, karmas/vidas passadas, entidades e feitiço.</p>
+                <p>• Os atendimentos são por ordem de chegada, não havendo a necessidade de estar online no momento da tiragem.</p>
+                <p>• Uma vez solicitada a tiragem, a desistência ou qualquer questão externa é de responsabilidade do(a) consulente, não havendo possibilidade de reembolso.</p>
+                <p>• Caso a tiragem seja de urgência, a taxa para atendimento imediato é de R$ 15,00 + o valor da tiragem.</p>
+                <p>• As tiragens não são realizadas por agendamento ou hora marcada em nenhuma hipótese! Os atendimentos são somente por ordem de chegada.</p>
+                <p>• O pagamento não poderá ser realizado como “crédito” para uma tiragem posterior. Caso realize o pagamento e não envie a pergunta/método escolhido, a tiragem será dada como entregue e finalizada.</p>
+            </div>
+            
+        </section>
+
+        <section class="catalog">
+            <h2>Catálogo de Serviços</h2>
+            <ul id="catalog-list">
+                <li><input type="checkbox" value="1 pergunta sim ou não: 10 reais">1 pergunta sim ou não: 10 reais</li>
+                <li><input type="checkbox" value="1 pergunta com explicação: 18 reais">1 pergunta com explicação: 18 reais</li>
+                <li><input type="checkbox" value="3 perguntas com explicação: 50 reais">3 perguntas com explicação: 50 reais</li>
+                <li><input type="checkbox" value="Templo de Afrodite: 45 reais">Templo de Afrodite: 45 reais</li>
+                <li><input type="checkbox" value="Tudo sobre ex: 60 reais">Tudo sobre ex: 60 reais</li>
+                <li><input type="checkbox" value="Carta canalizada simples: 50 reais">Carta canalizada simples: 50 reais</li>
+                <li><input type="checkbox" value="Carta canalizada completa: 70 reais">Carta canalizada completa: 70 reais</li>
+                <li><input type="checkbox" value="Os apaixonados: 60 reais">Os apaixonados: 60 reais</li>
+                <li><input type="checkbox" value="Descobrindo sobre o outro: 75 reais">Descobrindo sobre o outro: 75 reais</li>
+                <li><input type="checkbox" value="Caminho da prosperidade: 65 reais">Caminho da prosperidade: 65 reais</li>
+                <li><input type="checkbox" value="Caminho para ficantes: 60 reais">Caminho para ficantes: 60 reais</li>
+                <li><input type="checkbox" value="Mapeando a vida: 160 reais">Mapeando a vida: 160 reais</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sobre o Tarot</h2>
+            <p>O tarot é uma ferramenta poderosa de autoconhecimento e orientação, e é com muita dedicação que venho me aprofundando nesse trabalho há dois anos. Meu nome é Giovanna, e meu propósito é oferecer tiragens detalhadas e completas, conectadas diretamente com a energia de cada pessoa.
+
+                Cada consulta é uma oportunidade de explorar diferentes áreas da vida, desde amor e relacionamentos até questões profissionais e espirituais. Ao canalizar a energia do consulente, busco trazer clareza, conselhos e insights que possam ajudar na tomada de decisões e no entendimento de caminhos a serem seguidos.
+                
+                O tarot vai além de previsões; ele é um convite para refletir, crescer e alinhar-se com o que há de melhor em você. Se você busca respostas ou deseja compreender melhor os desafios e as possibilidades à sua frente, estou aqui para guiar essa jornada com carinho e respeito. 🃏💓
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Magia Lunar Tarot - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        const catalogList = document.getElementById('catalog-list');
+        const selectedOptionsList = document.getElementById('selected-options-list');
+        const whatsappLink = document.getElementById('whatsapp-link');
+
+        catalogList.addEventListener('change', (event) => {
+            if (event.target.tagName === 'INPUT' && event.target.type === 'checkbox') {
+                const service = event.target.value;
+
+                if (event.target.checked) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = service;
+                    listItem.dataset.service = service;
+                    selectedOptionsList.appendChild(listItem);
+                } else {
+                    const listItem = selectedOptionsList.querySelector(`li[data-service="${service}"]`);
+                    if (listItem) {
+                        selectedOptionsList.removeChild(listItem);
+                    }
+                }
+
+                updateWhatsAppLink();
+            }
+        });
+
+        function updateWhatsAppLink() {
+    const selectedServices = Array.from(selectedOptionsList.children).map(li => li.textContent);
+    if (selectedServices.length > 0) {
+        const message = `Olá,%20gostaria%20de%20agendar%20os%20seguintes%20serviços:%20${encodeURIComponent(selectedServices.join(', '))}`;
+        whatsappLink.href = `https://wa.me/5511932277916?text=${message}`;
+        whatsappLink.removeAttribute('disabled');
+    } else {
+        whatsappLink.href = "#";
+        whatsappLink.setAttribute('disabled', 'disabled');
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+            font-family: 'Playfair Display', 'Georgia', serif;
+            background: linear-gradient(135deg, #ffa2b8, #D6B7C2);
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgb(252, 141, 202);
+            box-shadow: 0 2px 15px #ff1493;
+        }
+
+        .header-logo {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .cards-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgb(75, 71, 71);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.5);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #ff1493;
+        }
+        
+        h1, h2 {
+            color: #3b0047;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgb(252, 141, 202);
+            color: #4a4a4a;
+        }
+        
+        p {
+            line-height: 1.6;
+        }
+        
+        section {
+            margin: 40px 0;
+        }
+        
+        .catalog {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgb(75, 71, 71);
+        }
+        
+        .catalog h2 {
+            text-align: center;
+        }
+        
+        .catalog ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .catalog li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .catalog input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .selected-services {
+            margin: 20px 0;
+            padding: 15px;
+            background: #ffe6f0;
+            border: 1px solid #db7093;
+            border-radius: 10px;
+        }
