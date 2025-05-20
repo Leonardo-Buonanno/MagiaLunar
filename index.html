@@ -112,7 +112,7 @@
         function updateWhatsAppLink() {
     const selectedServices = Array.from(selectedOptionsList.children).map(li => li.textContent);
     if (selectedServices.length > 0) {
-        const message = `Olá,%20gostaria%20de%20agendar%20os%20seguintes%20serviços:%20${encodeURIComponent(selectedServices.join(', '))}`;
+        const message = `Olá,%20gostaria%20de%20realizar%20os%20seguintes%20serviços:%20${encodeURIComponent(selectedServices.join(', '))}`;
         whatsappLink.href = `https://wa.me/5511932277916?text=${message}`;
         whatsappLink.removeAttribute('disabled');
     } else {
